@@ -8,8 +8,17 @@ jobs:
       - run: echo "hello world" # run the `echo` command
       - run: npm install
       - run: npm run lint
+  test:
+    docker:
+      - image: circleci/node:10.15.3
+    steps:
+      - checkout
+      - run: npm install && npm test
 workflows:
   version: 2
   workflow1:
     jobs:
       - lint
+      - test
+        requires:
+            - lint
