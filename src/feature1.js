@@ -4,6 +4,6 @@ module.exports = {
   }
 }
 
-const getNameFromParam = (req) => {
-  return "Voldemort"
+const getNameFromParam = () => {
+  return "Voldemort";
 }

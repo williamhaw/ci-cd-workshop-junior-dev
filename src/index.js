@@ -5,6 +5,7 @@ const feature1 = require('./feature1');
 const app = express();
 
 const server = app.listen(3000, () =>
+    /* eslint-disable-next-line no-console */
     console.log('Example app listening on port 3000!')
 );
 
