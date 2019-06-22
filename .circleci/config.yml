@@ -16,7 +16,7 @@ jobs:
       - run: npm install && npm test
 workflows:
   version: 2
-  workflow1:
+  build_and_test:
     jobs:
       - lint
       - test
